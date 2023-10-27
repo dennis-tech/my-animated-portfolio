@@ -5,7 +5,7 @@
     background: linear-gradient(180 deg, #0c0c1d, #111132);
     overflow: hidden;
     position: relative;
-
+    z-index: 1;
     
     .wrapper{
         max-width: 1366px;
@@ -21,6 +21,7 @@
             flex-direction: column;
             justify-content: center;
             gap: 40px;
+            
 
 
             @include mobile{
@@ -49,6 +50,7 @@
 
 
             .buttons{
+                z-index: 50;
                 button{
                     padding: 20px;
                     border: 1px solid white;
@@ -58,6 +60,11 @@
                     margin-right: 20px;
                     cursor: pointer;
                     font-weight: 300;
+                }
+
+                .contactBtn{
+                    background: white;
+                    color: black;
                 }
                 
             }

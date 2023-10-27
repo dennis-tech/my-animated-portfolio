@@ -1,5 +1,5 @@
 @import "../../app.scss";
-
+ 
 .contact{
     height: 100%;
     max-width: 1366px;
@@ -20,13 +20,14 @@
         display: flex;
         flex-direction: column;
         gap: 40px;
-
+        
 
         @include mobile{
             text-align: center;
             align-items: center;
             gap: 20px;
             margin-top: 70px;
+            transform: none !important;
         }
     }
 
@@ -51,6 +52,7 @@
         @include mobile{
            width: 100%;
            padding: 50px;
+           
         }
 
         .phoneSvg{
@@ -58,6 +60,9 @@
             stroke: orange;
             margin: auto;
             z-index: -1;
+
+            
+            
         }
 
         form{

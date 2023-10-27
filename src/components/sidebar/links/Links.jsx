@@ -29,7 +29,7 @@ const variants = {
  
  
  const Links = () => {
-    const items = ["Homepage", "Portfolio", "Contact", "About"];
+    const items = ["Homepage", "About" ,"Portfolio", "Contact"];
 
 
     return (
