@@ -1,5 +1,7 @@
+@import "../../app.scss";
+
 .about{
-    padding-top: 100px;
+    padding-top: 50px;
     .textContainer{
         height: 100%;
         max-width: 1366px;
@@ -9,6 +11,10 @@
         align-items: center;
         justify-content: center;
         gap: 50px;
+
+        @include mobile{
+            padding: 20px;
+        }
     }
 
     h1{
@@ -17,7 +23,7 @@
         left: 0;
         padding-top: 50px;
         text-align: center;
-        color: orange;
+        color: #ffb703;
         font-size: 36px;
     }
 }

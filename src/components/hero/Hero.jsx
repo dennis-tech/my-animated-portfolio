@@ -50,9 +50,9 @@ const Hero = () => {
             animate="animate"
             >
                 <motion.h2 variants = {textVariants} >DENNIS STANLEY</motion.h2>
-                <motion.h1 variants = {textVariants} >Software Developer and UI Designer</motion.h1>
+                <motion.h1 variants = {textVariants} >Web Developer</motion.h1>
                 <motion.div variants = {textVariants}  className="buttons">
-                    <motion.button variants = {textVariants} >See the Latest Works</motion.button>
+                    <motion.button variants = {textVariants}  className="portfolioBtn">See the Latest Works</motion.button>
                     <motion.button variants = {textVariants} className="contactBtn" > <a href="#Contact">Contact Me</a> </motion.button>
                 </motion.div>
                 <motion.img variants = {textVariants}  animate="scrollButton" src="/public/scroll.png" alt="" />
@@ -60,7 +60,7 @@ const Hero = () => {
         </div>
         
         <motion.div className="slidingTextContainer" variants={sliderVariants} initial="initial" animate="animate">
-            Writer Content Creator Influencer
+            Web Developer Front End
         </motion.div>
         <div className="imageContainer">
             <img src="/hero.png" alt="Dennis Stanley Kibe" />

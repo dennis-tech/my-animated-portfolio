@@ -6,21 +6,21 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 const items = [ 
   {
     id: 1,
-    title: "React Commerce",
-    img: "https://images.pexels.com/photos/18331954/pexels-photo-18331954/free-photo-of-a-mountain-range-with-a-snow-covered-peak.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-    desc: "A simple ecommerce website built with React and Commerce.js",
+    title: "Mobile Color Scheme Generator",
+    img: "/public/color scheme web.png",
+    desc: "A simple color scheme generator created using Javascript and the COLOR API to generate color schemes",
   },
   {
     id: 2,
-    title: "Next.js blog",
-    img: "https://images.pexels.com/photos/13422352/pexels-photo-13422352.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-    desc: "A simple blog built with Next.js and Contentful",
+    title: "My Learning Journey Website",
+    img: "/public/my learning journey.png",
+    desc: "A responsive website documenting my learning journey at Scrimba, created using HTML5, CSS3 AND JAVASCRIPT",
   },
   {
     id: 3,
-    title: "Vanilla Js app",
-    img: "https://images.pexels.com/photos/12999952/pexels-photo-12999952.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
-    desc: " A simple ecommerce website built with React and Commerce.js",
+    title: "Comment Endorsement  Mobile Web App",
+    img: "/public/endorsement web app.png",
+    desc: " An endorsement web application to give comments to someone, developed using HTML, CSS3, JAVASCRIPT AND FIREBASE",
   },
   {
     id: 4,
@@ -78,7 +78,7 @@ const Portfolio = () => {
   return (
     <div className="portfolio" ref = {ref}>
       <div className="progress">
-        <h1>Featured Works</h1>
+        <h1>Featured Projects</h1>
         <motion.div style={{scaleX}} className="progressBar"></motion.div>
       </div>
       {items.map((item) => (

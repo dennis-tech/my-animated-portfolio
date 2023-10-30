@@ -3,26 +3,41 @@
 
 .portfolio{
     position: relative;
+
+    @include mobile{
+        padding-top: 20px;
+        transform: none !important;
+    }
     .progress{
         position: sticky;
         top: 0;
         left: 0;
         padding-top: 50px;
         text-align: center;
-        color: orange;
+        color: #ffb703;
         font-size: 36px;
 
 
 
         @include mobile{
-            padding-top: calc(100vh - 100px);
+            
             font-size: 24px;
+            transform: none !important;
+            
+            
+            
+        }
+
+        h1{
+            margin-top: -30px;
         }
 
         .progressBar{
             height: 10px;
             background: white;
-
+            @include mobile{
+                display: none;
+            }
         }
     }
 
@@ -49,6 +64,8 @@
 
             @include mobile{
                 flex-direction: column;
+                transform: none !important;
+                gap: 0;
 
             }
         
@@ -58,8 +75,8 @@
                 height: 50%;
 
                 @include mobile{
-                    width: 100%;
-                    max-height: 300px;
+                    width: 90%;
+                    margin-top: 100px;
                     
                 }
 
@@ -73,6 +90,7 @@
                     @include mobile{
                         object-fit: contain;
                         
+                        
                     }
                 }
             }
@@ -85,8 +103,9 @@
                 gap: 30px;
 
                 @include mobile{
+                    margin-top: 0;
                     transform: none !important;
-                    padding: 10px;
+                    gap: 10px;
                     align-items: center;
                     text-align: center;
                     
@@ -98,6 +117,7 @@
 
                     @include mobile{
                         font-size: 36px;
+                        
                         
                     }
                 }
@@ -114,12 +134,18 @@
                 } 
 
                 button{
-                    background: yellow;
+                    background: #fb8500;
                     border: none;
                     border-radius: 10px;
                     padding: 10px;
                     width: 200px;
                     cursor: pointer;
+                }
+
+
+                button:hover, button:focus{
+                    background: #ffb703;
+                    color: white;
                 }
 
             }

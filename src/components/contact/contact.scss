@@ -52,15 +52,19 @@
         @include mobile{
            width: 100%;
            padding: 50px;
+           transform: none;
            
         }
 
         .phoneSvg{
             position: absolute;
-            stroke: orange;
+            stroke: #ffb703;
             margin: auto;
             z-index: -1;
 
+            @include mobile{
+                display: none;
+            }
             
             
         }
@@ -80,6 +84,7 @@
 
                 @include mobile{
                     padding: 10px;
+                    transform: none !important;
                 }
             }
 
